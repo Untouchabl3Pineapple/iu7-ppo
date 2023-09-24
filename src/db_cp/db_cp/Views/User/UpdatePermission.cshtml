@@ -1,0 +1,54 @@
+@model UserViewModel
+
+<link rel="stylesheet" href="/css/regAndTypes.css" type="text/css">
+
+<div class="heading">
+    Обновить права доступа
+</div>
+
+@if (User.IsInRole("admin"))
+{
+    <h3>
+        @{
+            try
+            {
+                var counter = 1;
+                foreach (var user in Model.users)
+                {
+                    <div>
+                        <h1>
+                            @counter)
+                            Логин: @user.Login;
+                            Уровень доступа: @user.Permission
+                        </h1>
+                    </div>
+                    counter++;
+                }
+            }
+            catch (Exception ex)
+            {
+                <h1>
+                    Лист не может быть загружен
+                </h1>
+            }
+        }
+    </h3>
+    <form asp-action="UpdatePermission" asp-controller="User" asp-anti-forgery="true">
+        <div class="validation" asp-validation-summary="ModelOnly"></div>
+        <div class="textbox">
+            <input class="form-control" placeholder="Логин" asp-for="Login" type="text">
+        </div>
+        <div class="textbox">
+            <input class="form-control" placeholder="Уровень доступа" asp-for="Permission" type="text">
+        </div>
+        <input class="btn" type="submit" value="Обновить уровень доступа">
+        <p>
+            Хотите вернуться обратно? <a asp-action="AddNewUser" asp-controller="User">Вернуться</a>
+        </p>
+    </form>
+}
+else
+{
+    <a>У вас не хватает прав</a>
+}
+

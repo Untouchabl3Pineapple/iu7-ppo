@@ -1,0 +1,160 @@
+﻿<Properties StartupConfiguration="{5612B8E1-D9BB-4A53-B4BE-96C014E58899}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="db_cp/logs/log1 10.txt">
+    <Files>
+      <File FileName="db_cp/Models/AppDBContext.cs" />
+      <File FileName="db_cp/Logger/FileLogger.cs" />
+      <File FileName="db_cp/Logger/FileLoggerExtensions.cs" />
+      <File FileName="db_cp/Logger/FileLoggerProvider.cs" />
+      <File FileName="db_cp/Mocks/DataMock.cs" />
+      <File FileName="db_cp/Startup.cs" />
+      <File FileName="db_cp/Program.cs" />
+      <File FileName="db_cp/dbsettings.json" />
+      <File FileName="db_cp/Properties/launchSettings.json" />
+      <File FileName="db_cp/Mocks/ButtonsPostsMock.cs" />
+      <File FileName="db_cp/Interfaces/IUsersRepository.cs" />
+      <File FileName="db_cp/Interfaces/IEventsTypesRepository.cs" />
+      <File FileName="db_cp/Interfaces/IButtonsPostsRepository.cs" />
+      <File FileName="db_cp/Interfaces/IButtonsEventsRepository.cs" />
+      <File FileName="db_cp/Mocks/ButtonsEventsMock.cs" />
+      <File FileName="db_cp/Models/ButtonsEvents.cs" />
+      <File FileName="db_cp/Services/ButtonsEventsService.cs" />
+      <File FileName="db_cp/Models/ButtonsPosts.cs" />
+      <File FileName="db_cp/Mocks/EventsMock.cs" />
+      <File FileName="db_cp/Models/EventsTypes.cs" />
+      <File FileName="db_cp/Models/Users.cs" />
+      <File FileName="db_cp/Services/ButtonsPostsService.cs" />
+      <File FileName="db_cp/Services/EventsService.cs" />
+      <File FileName="db_cp/Mocks/EventsTypesMock.cs" />
+      <File FileName="db_cp/Mocks/UsersMock.cs" />
+      <File FileName="db_cp/Services/EventsTypesService.cs" />
+      <File FileName="db_cp/appsettings.json" />
+      <File FileName="db_cp/appsettings.Development.json" />
+      <File FileName="db_cp/Interfaces/IEventsRepository.cs" />
+      <File FileName="db_cp/Services/UsersService.cs" />
+      <File FileName="UnitDBL/UnitTestServiceButtonsEvents.cs" />
+      <File FileName="UnitDBL/UnitTestServiceEvents.cs" />
+      <File FileName="UnitDBL/UnitTestServiceEventsTypes.cs" />
+      <File FileName="UnitDBL/UnitTestServiceUsers.cs" />
+      <File FileName="db_cp/Repository/ButtonsPostsRepository.cs" />
+      <File FileName="db_cp/Repository/EventsRepository.cs" />
+      <File FileName="db_cp/Repository/EventsTypesRepository.cs" />
+      <File FileName="db_cp/Repository/ButtonsEventsRepository.cs" />
+      <File FileName="UnitDAL/UnitTestButtonsEvents.cs" />
+      <File FileName="db_cp/dodnetMigr.txt" />
+      <File FileName="UnitDAL/UnitTestEvents.cs" />
+      <File FileName="UnitDAL/UnitTestEventsTypes.cs" />
+      <File FileName="UnitDAL/UnitTestUsers.cs" />
+      <File FileName="db_cp/ViewModels/AccountViewModel.cs" />
+      <File FileName="db_cp/ViewModels/HomeViewModel.cs" />
+      <File FileName="db_cp/Controllers/AccountController.cs" />
+      <File FileName="db_cp/Controllers/UserController.cs" />
+      <File FileName="db_cp/Controllers/HomeController.cs" />
+      <File FileName="db_cp/ViewModels/UserViewModel.cs" />
+      <File FileName="db_cp/Views/Account/Login.cshtml" />
+      <File FileName="db_cp/Views/_ViewImports.cshtml" />
+      <File FileName="db_cp/Views/_ViewStart.cshtml" />
+      <File FileName="db_cp/Views/Account/Register.cshtml" />
+      <File FileName="../../../../../hobby/CROC/general/templates/general/buttons.html" />
+      <File FileName="db_cp/wwwroot/js/password.js" />
+      <File FileName="db_cp/Views/EventsTypes/AddEventType.cshtml" />
+      <File FileName="db_cp/Views/EventsTypes/DelEventType.cshtml" />
+      <File FileName="../../../db_cp/src/CROC/general/templates/general/base.html" />
+      <File FileName="../../../db_cp/src/CROC/static/registration/css/main.css" />
+      <File FileName="../../../db_cp/src/CROC/general/static/general/css/base.css" />
+      <File FileName="db_cp/Views/Home/index.cshtml" />
+      <File FileName="../../../db_cp/src/CROC/general/templates/general/monitoring.html" />
+      <File FileName="../../../db_cp/src/CROC/general/templates/general/types.html" />
+      <File FileName="../../../db_cp/src/CROC/general/static/general/css/types.css" />
+      <File FileName="../../../db_cp/src/CROC/general/static/general/css/monitoring.css" />
+      <File FileName="../../../db_cp/src/CROC/general/static/general/css/events.css" />
+      <File FileName="../../../db_cp/src/CROC/general/templates/general/buttons.html" />
+      <File FileName="../../../db_cp/src/CROC/general/templates/general/emulator.html" />
+      <File FileName="../../../db_cp/src/CROC/general/static/general/css/edit.css" />
+      <File FileName="../../../db_cp/src/CROC/general/static/general/css/emulator.css" />
+      <File FileName="db_cp/wwwroot/css/events.css" />
+      <File FileName="db_cp/wwwroot/css/board.css" />
+      <File FileName="db_cp/wwwroot/css/base.css" />
+      <File FileName="db_cp/Migrations/20230514000136_initial.cs" />
+      <File FileName="db_cp/Views/Shared/_Layout.cshtml" />
+      <File FileName="db_cp/Controllers/EventsTypesController.cs" />
+      <File FileName="db_cp/ViewModels/EventsTypesViewModel.cs" />
+      <File FileName="db_cp/Views/User/AddNewUser.cshtml" />
+      <File FileName="db_cp/Views/User/UpdatePermission.cshtml" />
+      <File FileName="db_cp/Repository/UsersRepository.cs" />
+      <File FileName="db_cp/Controllers/EventsController.cs" />
+      <File FileName="db_cp/ViewModels/EventsViewModel.cs" />
+      <File FileName="db_cp/Views/Events/editing.cshtml" />
+      <File FileName="../../../../../hobby/CROC/general/templates/general/monitoring.html" />
+      <File FileName="../../../../../hobby/CROC/general/templates/general/base.html" />
+      <File FileName="../../../../../hobby/CROC/general/templates/general/edit.html" />
+      <File FileName="../../../../../hobby/CROC/general/templates/general/emulator.html" />
+      <File FileName="../../../../../hobby/CROC/general/templates/general/types.html" />
+      <File FileName="../../../../../hobby/CROC/templates/registration/base.html" />
+      <File FileName="db_cp/db/src/triggers.sql" />
+      <File FileName="db_cp/wwwroot/css/regAndTypes.css" />
+      <File FileName="db_cp/Migrations/AppDBContextModelSnapshot.cs" />
+      <File FileName="db_cp/Models/News.cs" />
+      <File FileName="db_cp/Interfaces/INewsRepository.cs" />
+      <File FileName="db_cp/Properties/PublishProfiles/FolderProfile.pubxml" />
+      <File FileName="db_cp/Properties/PublishProfiles/FolderProfile 1.pubxml" />
+      <File FileName="db_cp/Properties/PublishProfiles/FolderProfile 2.pubxml" />
+      <File FileName="db_cp/Repository/NewsRepository.cs" />
+      <File FileName="db_cp/Services/NewsService.cs" />
+      <File FileName="db_cp/Controllers/NewsController.cs" />
+      <File FileName="db_cp/ViewModels/NewsViewModel.cs" />
+      <File FileName="db_cp/Views/News/AddNews.cshtml" />
+      <File FileName="db_cp/Migrations/20230514000136_initial.Designer.cs" />
+      <File FileName="db_cp/db_cp.csproj" />
+      <File FileName="db_cp/Migrations/20230518143743_newTable.cs" />
+      <File FileName="db_cp/Migrations/20230518143743_newTable.Designer.cs" />
+      <File FileName="db_cp/makefile" />
+      <File FileName="db_cp/logs/log.txt" />
+      <File FileName="db_cp/Models/Events.cs" />
+      <File FileName="db_cp/Configuration/DatabaseSettings.cs" />
+      <File FileName="db_cp/jmeter.log" />
+      <File FileName="db_cp/logs/log1 10.txt" Line="24" Column="43" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ppo" expanded="True">
+            <Node name="db_cp" expanded="True">
+              <Node name="Configuration" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Logger" expanded="True" />
+              <Node name="logs" expanded="True" />
+              <Node name="Mocks" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Events" expanded="True" />
+                <Node name="EventsTypes" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="User" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="ppo" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.db__cp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

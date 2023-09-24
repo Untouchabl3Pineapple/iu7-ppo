@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/css/base.css",
+      "PackagePath": "staticwebassets/css/base.css"
+    },
+    {
+      "Id": "/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/css/board.css",
+      "PackagePath": "staticwebassets/css/board.css"
+    },
+    {
+      "Id": "/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/css/events.css",
+      "PackagePath": "staticwebassets/css/events.css"
+    },
+    {
+      "Id": "/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/css/regAndTypes.css",
+      "PackagePath": "staticwebassets/css/regAndTypes.css"
+    },
+    {
+      "Id": "/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/img/background_login.jpeg",
+      "PackagePath": "staticwebassets/img/background_login.jpeg"
+    },
+    {
+      "Id": "/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/js/password.js",
+      "PackagePath": "staticwebassets/js/password.js"
+    },
+    {
+      "Id": "obj/Debug/netcoreapp6.0/staticwebassets/msbuild.build.db_cp.props",
+      "PackagePath": "build\\db_cp.props"
+    },
+    {
+      "Id": "obj/Debug/netcoreapp6.0/staticwebassets/msbuild.buildMultiTargeting.db_cp.props",
+      "PackagePath": "buildMultiTargeting\\db_cp.props"
+    },
+    {
+      "Id": "obj/Debug/netcoreapp6.0/staticwebassets/msbuild.buildTransitive.db_cp.props",
+      "PackagePath": "buildTransitive\\db_cp.props"
+    },
+    {
+      "Id": "obj/Debug/netcoreapp6.0/staticwebassets/msbuild.db_cp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

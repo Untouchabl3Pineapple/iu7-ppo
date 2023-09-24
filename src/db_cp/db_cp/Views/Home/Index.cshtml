@@ -1,0 +1,191 @@
+@model HomeViewModel
+
+<link rel="stylesheet" href="/css/board.css" type="text/css">
+<link rel="stylesheet" href="/css/events.css" type="text/css">
+
+<div id="mondiv" class="monitoringDiv">
+    <table class="monitoring-table">
+        <tbody class="monitoringTBody">
+            @{
+                var top_color = "";
+                var bottom_color = "";
+
+                <tr id="monitoringTr1" class="monitoringTr">
+                    @foreach (var bpost in Model.allButtonsPosts.OrderBy(el => el.Post))
+                    {
+                        if (bpost.LeftColor == "RED")
+                        {
+                            top_color = "background-color: #ff1f00";
+                        }
+                        else if (bpost.LeftColor == "YELLOW")
+                        {
+                            top_color = "background-color: #ffff00";
+                        }
+                        else
+                        {
+                            top_color = "background-color: #19ff19";
+                        }
+
+                        if (bpost.RightColor == "RED")
+                        {
+                            bottom_color = "background-color: #ff1f00";
+                        }
+                        else if (bpost.LeftColor == "YELLOW")
+                        {
+                            bottom_color = "background-color: #ffff00";
+                        }
+                        else
+                        {
+                            bottom_color = "background-color: #19ff19";
+                        }
+
+                        <td id=@(bpost.LeftSide + "_" + @bpost.LeftColor + "_" + @bpost.Post + "t") class="accdient-registration-top"
+                            style="@top_color">
+                        </td>
+                    }
+                </tr>
+
+
+                <tr id="monitoringTr2" class="monitoringTr">
+                    @foreach (var bpost in Model.allButtonsPosts.OrderBy(el => el.Post))
+                    {
+                        <td id="@bpost.Post" class="post-nmb">
+                            @bpost.Post
+                        </td>
+                    }
+
+                </tr>
+
+                <tr id="monitoringTr3" class="monitoringTr">
+
+                    @foreach (var bpost in Model.allButtonsPosts.OrderBy(el => el.Post))
+                    {
+                        if (bpost.LeftColor == "RED")
+                        {
+                            top_color = "background-color: #ff1f00";
+                        }
+                        else if (bpost.LeftColor == "YELLOW")
+                        {
+                            top_color = "background-color: #ffff00";
+                        }
+                        else
+                        {
+                            top_color = "background-color: #19ff19";
+                        }
+
+                        if (bpost.RightColor == "RED")
+                        {
+                            bottom_color = "background-color: #ff1f00";
+                        }
+                        else if (bpost.LeftColor == "YELLOW")
+                        {
+                            bottom_color = "background-color: #ffff00";
+                        }
+                        else
+                        {
+                            bottom_color = "background-color: #19ff19";
+                        }
+                        <td id=@(bpost.RightSide + "_" + @bpost.RightColor + "_" + @bpost.Post + "b") class="accdient-registration-bottom"
+                            style="@bottom_color">
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@*@if (User.Identity.IsAuthenticated == false)*@
+    @if (User.Identity.IsAuthenticated || User.IsInRole("guest"))
+    {
+        <div id="eventdiv" class="eventDiv">
+            <table class="eventsTable">
+                <thead class="eventsHead">
+                    <tr class="eventsHeadRow">
+                        <td id="evnetsHeadNum0" style="width: 10%" class="eventsHeadTd">
+                            № Поста
+                        </td>
+                        <td id="evnetsHeadNum1" style="width: 20%" class="eventsHeadTd">
+                            Тип происшествия
+                        </td>
+                        <td id="evnetsHeadNum2" style="width: 40%" class="eventsHeadTd">
+                            Описание
+                        </td>
+                        <td id="evnetsHeadNum3" style="width: 10%" class="eventsHeadTd">
+                            Время фиксации
+                        </td>
+                        <td id="evnetsHeadNum4" style="width: 10%" class="eventsHeadTd">
+                            Время устранения
+                        </td>
+                        <td id="evnetsHeadNum5" style="width: 10%" class="eventsHeadTd">
+                            Редактор
+                        </td>
+                    </tr>
+                </thead>
+                <tbody class="eventsTBody">
+                    @for (int i = 0; i < 10; i++)
+                    {
+                        <tr id="@("eventsBodyRowNum" + i)" class="eventsBodyRowOdd">
+                            <td class="eventsTd" id=@("post" + i)>
+                                @Model.allButtonsEvents.Reverse().FirstOrDefault(elem => elem.ID == @Model.allEvents.Reverse().ElementAt(i).ButtonEvent_ID).Number
+                            </td>
+
+                            <td id=@("type_event" + i) class="typeEvent">
+                                @try
+                                {
+                                    @Model.allEventsTypes.FirstOrDefault(elem => elem.ID == @Model.allEvents.Reverse().ElementAt(i).EventType_ID).EventType
+                                }
+                                catch (Exception ex)
+                                {
+                                    <div>
+                                        -
+                                    </div>
+                                }
+                            </td>
+
+                            <td id=@("desc" + i) class="descriptionButton">
+                                @try
+                                {
+                                    @Model.allEvents.Reverse().ElementAt(i).EventDescription
+                                }
+                                catch (Exception ex)
+                                {
+                                    <div>
+                                        -
+                                    </div>
+                                }
+                            </td>
+
+                            <td id=@("detect" + i) class="eventsTd">
+                                @Model.allEvents.Reverse().ElementAt(i).DetectingTime
+                            </td>
+
+                            <td id=@("fix" + i) class="eventsTd">
+                                @try
+                                {
+                                    @Model.allEvents.Reverse().ElementAt(i).FixingTime
+                                }
+                                catch (Exception ex)
+                                {
+                                    <div>
+                                        -
+                                    </div>
+                                }
+                            </td>
+
+                            <td class="editTd">
+                                <a asp-action="Editing" asp-controller="Events" asp-route-id=@Model.allEvents.Reverse().ElementAt(i).ID>
+                                    <button class="far fa-edit" id="@("edit" + i)" style="cursor: pointer; font-size: 24px; color: blue; width: 60px; height: 30px; background-color: white; border: none">
+                                    </button>
+                                </a>
+
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        </div>
+    }
+

@@ -1,0 +1,28 @@
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/EventsTypes/AddEventType - -
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Category: Request received. Method: GET, Path: /EventsTypes/AddEventType
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.EventsTypesController.AddEventType (db_cp)'
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddEventType", controller = "EventsTypes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEventType() on controller db_cp.Controllers.EventsTypesController (db_cp).
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] db_cp.Controllers.EventsTypesController: admin
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view AddEventType.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view AddEventType executed in 14.8902ms.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.EventsTypesController.AddEventType (db_cp) in 30.1885ms
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.EventsTypesController.AddEventType (db_cp)'
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:09 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/EventsTypes/AddEventType - - - 200 - text/html;+charset=utf-8 43.2906ms
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/User/AddNewUser - -
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Category: Request received. Method: GET, Path: /User/AddNewUser
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.UserController.AddNewUser (db_cp)'
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddNewUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddNewUser() on controller db_cp.Controllers.UserController (db_cp).
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u."Login", u."MiddleName", u."Name", u."Password", u."Permission", u."Surname"
+FROM "Users" AS u
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] db_cp.Controllers.UserController: admin
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view AddNewUser.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view AddNewUser executed in 20.8086ms.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.UserController.AddNewUser (db_cp) in 38.9645ms
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.UserController.AddNewUser (db_cp)'
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:10 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/User/AddNewUser - - - 200 - text/html;+charset=utf-8 52.1125ms

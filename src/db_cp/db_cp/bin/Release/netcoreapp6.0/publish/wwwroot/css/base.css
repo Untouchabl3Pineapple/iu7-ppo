@@ -1,0 +1,66 @@
+@import "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+
+* {
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    background: rgb(71, 71, 212);
+    height: 80px;
+    font-size: 14pt;
+}
+
+.menu a {
+    color: black;
+}
+
+.logo {
+    margin-left: 30px;
+    padding-top: 12px;
+}
+
+.head {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 24px;
+}
+
+.item {
+    width: 130px;
+    margin-left: 40px;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px 15px 15px 15px;
+    background-color: white;
+}
+
+#role {
+    width: 200px;
+    margin-left: 200px;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: green;
+}
+
+#auth {
+    margin-left: 650px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu img {
+    padding-left: 30px;
+}

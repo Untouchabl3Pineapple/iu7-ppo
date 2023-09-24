@@ -1,0 +1,20 @@
+{
+  "SerializedFilePath": "/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/UnitDAL/obj/Debug/netcoreapp6.0/project.razor.json",
+  "FilePath": "/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/UnitDAL/UnitDAL.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}

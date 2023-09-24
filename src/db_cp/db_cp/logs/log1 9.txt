@@ -1,0 +1,14 @@
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/User/UpdatePermission - -
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Category: Request received. Method: GET, Path: /User/UpdatePermission
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.UserController.UpdatePermission (db_cp)'
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "UpdatePermission", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdatePermission() on controller db_cp.Controllers.UserController (db_cp).
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] db_cp.Controllers.UserController: admin
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT u."Login", u."MiddleName", u."Name", u."Password", u."Permission", u."Surname"
+FROM "Users" AS u
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view UpdatePermission.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view UpdatePermission executed in 12.3619ms.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.UserController.UpdatePermission (db_cp) in 27.3884ms
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.UserController.UpdatePermission (db_cp)'
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:18:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/User/UpdatePermission - - - 200 - text/html;+charset=utf-8 42.2555ms

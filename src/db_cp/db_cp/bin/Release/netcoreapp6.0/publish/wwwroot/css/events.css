@@ -1,0 +1,82 @@
+.eventsTable {
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+    border: 2px solid black;
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden;
+    hide standard table (collapsed) border box-shadow: 0 0 0 2px black;
+    this draws the table border
+}
+
+.typeEvent {
+    background-color: white;
+    font-size: large;
+    font-family: Verdana, Tahoma, sans-serif;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.typeEventEven {
+    background-color: white;
+    font-size: large;
+    font-family: Verdana, Tahoma, sans-serif;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.descriptionButton {
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: large;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: white;
+}
+
+
+
+.eventsHeadRow {
+    font-size: large;
+    font-family: Verdana, Tahoma, sans-serif;
+    height: 80px;
+}
+
+
+.eventsHeadTd {
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+
+.eventsTd {
+    border-bottom: 2px solid black;
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+}
+
+.eventsBodyRowOdd {
+    border-bottom: 2px solid black;
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+}
+
+.eventsBodyRowEven {
+    border-bottom: 2px solid black;
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+}

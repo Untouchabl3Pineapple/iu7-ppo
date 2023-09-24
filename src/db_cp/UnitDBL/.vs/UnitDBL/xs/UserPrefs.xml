@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{025BE347-B154-4FE6-A351-F12E59B54E73}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UnitDBL PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UnitTestServiceEvents.cs">
+    <Files>
+      <File FileName="UnitTestServiceEvents.cs" Line="1" Column="1" />
+      <File FileName="UnitTestServiceButtonsEvents.cs" />
+      <File FileName="UnitTestServiceButtonsPosts.cs" />
+      <File FileName="UnitTestServiceUsers.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UnitDBL" expanded="True">
+            <Node name="UnitDBL" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="UnitDBL" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

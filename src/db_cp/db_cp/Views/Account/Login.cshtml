@@ -1,0 +1,32 @@
+﻿@model LoginViewModel
+
+<link rel="stylesheet" href="/css/regAndTypes.css" type="text/css">
+
+<div class="heading">
+    Авторизация
+</div>
+
+<form asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <div>
+        <div class="textbox">
+            <i class="fas fa-user-tie"></i>
+            <input class="form-control" placeholder="Логин" asp-for="Login" type="text">
+            <span asp-validation-for="Login" />
+        </div>
+        <div class="textbox">
+            <i class="fas fa-key"></i>
+            <input class="form-control" placeholder="Пароль" asp-for="Password" type="password", id="pas">
+            <span asp-validation-for="Password" />
+        </div>
+
+        <input type="checkbox" onclick="hidePas()">Показать пароль
+
+        <input class="btn" type="submit" value="Авторизироваться">
+        <div class="sign-up">
+            <p>
+                У вас нет аккаунта? <a asp-action="Register" asp-controller="Account">Зарегистрироваться</a>
+            </p>
+        </div>
+    </div>
+</form>

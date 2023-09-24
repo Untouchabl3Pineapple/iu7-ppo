@@ -1,0 +1,525 @@
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:11:58 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using '/Users/ilya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:11:58 [Information] MyCategory: Application started.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:11:58 [Information] Microsoft.Hosting.Lifetime: Now listening on: https://localhost:5001
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:11:59 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5000
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:11:59 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:11:59 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:11:59 [Information] Microsoft.Hosting.Lifetime: Content root path: /Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:14 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:14 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:14 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:14 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:14 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] db_cp.Controllers.AccountController: user: admin; method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 187.1639ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 723.7952ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 802.8359ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/css/base.css - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/js/password.js - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/css/base.css'. Physical path: '/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/css/base.css'
+js'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/js/password.js - - - 200 172 text/javascript 138.9143ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/css/base.css - - - 200 813 text/css 137.9340ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/css/events.css - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/css/board.css - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/css/board.css'. Physical path: '/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/css/board.css'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/css/events.css'. Physical path: '/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/css/events.css'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/css/board.css - - - 200 840 text/css 51.7507ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:15 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/css/events.css - - - 200 1729 text/css 53.9275ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/ - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] MyCategory: Request received. Method: GET, Path: /
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Logout (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] db_cp.Controllers.AccountController: user: admin; method: MoveNext
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed out.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Home/Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Logout (db_cp) in 14.8372ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Logout (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] MyCategory: Request completed. Method: GET, Path: /, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/ - - - 302 0 - 55.3844ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] db_cp.Controllers.AccountController: user: (null); method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 2.4419ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 23.2502ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:16 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 29.4730ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Account/Login - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] MyCategory: Request received. Method: GET, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] db_cp.Controllers.AccountController: user: (null); method: Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 22.9793ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 29.0938ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] MyCategory: Request completed. Method: GET, Path: /Account/Login, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Account/Login - - - 200 - text/html;+charset=utf-8 39.6087ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/css/regAndTypes.css - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/css/regAndTypes.css'. Physical path: '/Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp/wwwroot/css/regAndTypes.css'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:17 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/css/regAndTypes.css - - - 200 1135 text/css 29.2889ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 209
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] MyCategory: Request received. Method: POST, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(db_cp.ViewModels.LoginViewModel) on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (3ms) [Parameters=[@__login_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."Login", u."MiddleName", u."Name", u."Password", u."Permission", u."Surname"
+FROM "Users" AS u
+WHERE u."Login" = @__login_0
+LIMIT 1
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed in.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] db_cp.Controllers.AccountController: user: (null); method: MoveNext
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Home/Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 71.2975ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] MyCategory: Request completed. Method: POST, Path: /Account/Login, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 209 - 302 0 - 86.3780ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] db_cp.Controllers.AccountController: user: admin; method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 76.8097ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 109.5538ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:18 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 116.4162ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/EventsTypes/AddEventType - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] MyCategory: Request received. Method: GET, Path: /EventsTypes/AddEventType
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.EventsTypesController.AddEventType (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddEventType", controller = "EventsTypes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEventType() on controller db_cp.Controllers.EventsTypesController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] db_cp.Controllers.AccountController: user: admin; method: AddEventType
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view AddEventType.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view AddEventType executed in 8.5856ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.EventsTypesController.AddEventType (db_cp) in 18.5445ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.EventsTypesController.AddEventType (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] MyCategory: Request completed. Method: GET, Path: /EventsTypes/AddEventType, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:21 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/EventsTypes/AddEventType - - - 200 - text/html;+charset=utf-8 30.6461ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST https://localhost:5001/EventsTypes/AddEventType application/x-www-form-urlencoded 238
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] MyCategory: Request received. Method: POST, Path: /EventsTypes/AddEventType
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.EventsTypesController.AddEventType (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddEventType", controller = "EventsTypes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEventType(db_cp.ViewModels.EventTypeViewModel) on controller db_cp.Controllers.EventsTypesController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[@p0='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "EventsTypes" ("EventType")
+VALUES (@p0)
+RETURNING "ID";
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] db_cp.Controllers.AccountController: user: admin; method: AddEventType
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /EventsTypes/AddEventType.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.EventsTypesController.AddEventType (db_cp) in 55.0578ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.EventsTypesController.AddEventType (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] MyCategory: Request completed. Method: POST, Path: /EventsTypes/AddEventType, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 POST https://localhost:5001/EventsTypes/AddEventType application/x-www-form-urlencoded 238 - 302 0 - 71.1816ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/EventsTypes/AddEventType - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] MyCategory: Request received. Method: GET, Path: /EventsTypes/AddEventType
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.EventsTypesController.AddEventType (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddEventType", controller = "EventsTypes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEventType() on controller db_cp.Controllers.EventsTypesController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] db_cp.Controllers.AccountController: user: admin; method: AddEventType
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view AddEventType.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view AddEventType executed in 1.4987ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.EventsTypesController.AddEventType (db_cp) in 5.0207ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.EventsTypesController.AddEventType (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] MyCategory: Request completed. Method: GET, Path: /EventsTypes/AddEventType, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:13:27 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/EventsTypes/AddEventType - - - 200 - text/html;+charset=utf-8 10.1238ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:36 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using '/Users/ilya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:36 [Information] MyCategory: Application started.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:36 [Information] Microsoft.Hosting.Lifetime: Now listening on: https://localhost:5001
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:36 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5000
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:36 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:36 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:36 [Information] Microsoft.Hosting.Lifetime: Content root path: /Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:49 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:49 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:49 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:49 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] db_cp.Controllers.AccountController: user: admin; method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 160.878ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 677.6175ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 754.3368ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/css/base.css - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/css/board.css - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/js/password.js - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/css/events.css - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /css/events.css was not modified
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /css/board.css was not modified
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /js/password.js was not modified
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/css/events.css - - - 304 - text/css 8.1960ms
+
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/css/base.css - - - 304 - text/css 189.2354ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:50 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/js/password.js - - - 304 - text/javascript 8.1992ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/ - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] MyCategory: Request received. Method: GET, Path: /
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Logout (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] db_cp.Controllers.AccountController: user: admin; method: MoveNext
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed out.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Home/Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Logout (db_cp) in 12.5759ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Logout (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] MyCategory: Request completed. Method: GET, Path: /, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/ - - - 302 0 - 28.9160ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] db_cp.Controllers.AccountController: user: (null); method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 2.4632ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 23.9288ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:51 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 55.8986ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Account/Login - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] MyCategory: Request received. Method: GET, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] db_cp.Controllers.AccountController: [null]
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 18.6387ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 24.5395ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] MyCategory: Request completed. Method: GET, Path: /Account/Login, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Account/Login - - - 200 - text/html;+charset=utf-8 39.3930ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/css/regAndTypes.css - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /css/regAndTypes.css was not modified
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:52 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/css/regAndTypes.css - - - 304 - text/css 3.4675ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 212
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] MyCategory: Request received. Method: POST, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(db_cp.ViewModels.LoginViewModel) on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[@__login_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."Login", u."MiddleName", u."Name", u."Password", u."Permission", u."Surname"
+FROM "Users" AS u
+WHERE u."Login" = @__login_0
+LIMIT 1
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] db_cp.Controllers.AccountController: [null]
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 2.1983ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 69.7871ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] MyCategory: Request completed. Method: POST, Path: /Account/Login, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:20:54 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 212 - 200 - text/html;+charset=utf-8 83.1344ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 209
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] MyCategory: Request received. Method: POST, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(db_cp.ViewModels.LoginViewModel) on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__login_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."Login", u."MiddleName", u."Name", u."Password", u."Permission", u."Surname"
+FROM "Users" AS u
+WHERE u."Login" = @__login_0
+LIMIT 1
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed in.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] db_cp.Controllers.AccountController: [null]
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Home/Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 20.773ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] MyCategory: Request completed. Method: POST, Path: /Account/Login, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 209 - 302 0 - 30.6643ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] db_cp.Controllers.AccountController: user: admin; method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 73.2272ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 104.0407ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:22:30 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 109.1254ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/ - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] MyCategory: Request received. Method: GET, Path: /
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Logout (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] db_cp.Controllers.AccountController: user: admin; method: MoveNext
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed out.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Home/Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Logout (db_cp) in 9.0233ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Logout (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] MyCategory: Request completed. Method: GET, Path: /, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/ - - - 302 0 - 50.3752ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] db_cp.Controllers.AccountController: user: (null); method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 1.5656ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 29.5226ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:26:31 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 63.5334ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:17 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using '/Users/ilya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:17 [Information] MyCategory: Application started.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:17 [Information] Microsoft.Hosting.Lifetime: Now listening on: https://localhost:5001
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:17 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5000
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:17 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:17 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:17 [Information] Microsoft.Hosting.Lifetime: Content root path: /Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Account/Login - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] MyCategory: Request received. Method: GET, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] db_cp.Controllers.AccountController: [null]
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 45.0034ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 115.2862ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] MyCategory: Request completed. Method: GET, Path: /Account/Login, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:20 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Account/Login - - - 200 - text/html;+charset=utf-8 173.1342ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:21 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 209
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:21 [Information] MyCategory: Request received. Method: POST, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:21 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(db_cp.ViewModels.LoginViewModel) on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[@__login_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."Login", u."MiddleName", u."Name", u."Password", u."Permission", u."Surname"
+FROM "Users" AS u
+WHERE u."Login" = @__login_0
+LIMIT 1
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed in.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] db_cp.Controllers.AccountController: [null]
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Home/Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 447.2802ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] MyCategory: Request completed. Method: POST, Path: /Account/Login, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 209 - 302 0 - 472.5532ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] db_cp.Controllers.AccountController: user: admin; method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 141.6862ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 194.8561ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:27:22 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 206.4166ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:30 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using '/Users/ilya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:30 [Information] MyCategory: Application started.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:30 [Information] Microsoft.Hosting.Lifetime: Now listening on: https://localhost:5001
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:30 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5000
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:30 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:30 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:30 [Information] Microsoft.Hosting.Lifetime: Content root path: /Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/ - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] MyCategory: Request received. Method: GET, Path: /
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Logout (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] db_cp.Controllers.AccountController: user: admin; method: MoveNext
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed out.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Home/Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Logout (db_cp) in 57.5593ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Logout (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] MyCategory: Request completed. Method: GET, Path: /, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/ - - - 302 0 - 102.8126ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:32 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] db_cp.Controllers.AccountController: user: (null); method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 26.2257ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 465.0314ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:33 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 482.7279ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Account/Login - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] MyCategory: Request received. Method: GET, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] db_cp.Controllers.AccountController: [null]
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 20.491ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 27.1395ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] MyCategory: Request completed. Method: GET, Path: /Account/Login, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Account/Login - - - 200 - text/html;+charset=utf-8 62.8206ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 209
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] MyCategory: Request received. Method: POST, Path: /Account/Login
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:34 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(db_cp.ViewModels.LoginViewModel) on controller db_cp.Controllers.AccountController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (3ms) [Parameters=[@__login_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT u."Login", u."MiddleName", u."Name", u."Password", u."Permission", u."Surname"
+FROM "Users" AS u
+WHERE u."Login" = @__login_0
+LIMIT 1
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed in.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] db_cp.Controllers.AccountController: [null]
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Home/Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.AccountController.Login (db_cp) in 81.0418ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.AccountController.Login (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] MyCategory: Request completed. Method: POST, Path: /Account/Login, Status Code: 302
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 POST https://localhost:5001/Account/Login application/x-www-form-urlencoded 209 - 302 0 - 94.5964ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET https://localhost:5001/Home/Index - -
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] MyCategory: Request received. Method: GET, Path: /Home/Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(db_cp.ViewModels.HomeViewModel) on controller db_cp.Controllers.HomeController (db_cp).
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 5.0.15 initialized 'AppDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."Post", b."LeftColor", b."LeftSide", b."RightColor", b."RightSide"
+FROM "ButtonsPosts" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT b."ID", b."ButtonColor", b."Number"
+FROM "ButtonsEvents" AS b
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."EventType"
+FROM "EventsTypes" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT e."ID", e."ButtonEvent_ID", e."DetectingTime", e."EventDescription", e."EventType_ID", e."FixingTime", e."TimeUpdate", e."User_Login"
+FROM "Events" AS e
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] db_cp.Controllers.AccountController: user: admin; method: Index
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 130.5534ms.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action db_cp.Controllers.HomeController.Index (db_cp) in 142.8678ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'db_cp.Controllers.HomeController.Index (db_cp)'
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] MyCategory: Request completed. Method: GET, Path: /Home/Index, Status Code: 200
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:28:35 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET https://localhost:5001/Home/Index - - - 200 - text/html;+charset=utf-8 147.7819ms
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:30:48 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using '/Users/ilya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:30:48 [Information] MyCategory: Application started.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:30:48 [Information] Microsoft.Hosting.Lifetime: Now listening on: https://localhost:5001
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:30:48 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5000
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:30:49 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:30:49 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+(UTC-05:00) Eastern Time (New York) 21.05.2023 15:30:49 [Information] Microsoft.Hosting.Lifetime: Content root path: /Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp

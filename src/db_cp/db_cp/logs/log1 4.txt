@@ -1,0 +1,7 @@
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:17:04 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using '/Users/ilya/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:17:05 [Information] Category: Application started.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:17:05 [Information] Microsoft.Hosting.Lifetime: Now listening on: https://localhost:5001
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:17:05 [Information] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5000
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:17:05 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:17:05 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+(UTC-05:00) Eastern Time (New York) 05.06.2023 12:17:05 [Information] Microsoft.Hosting.Lifetime: Content root path: /Users/ilya/Desktop/study/bmstu/ppo/src/db_cp/db_cp

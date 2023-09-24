@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500,600,700"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="/css/base.css" type="text/css">
+    <script src="/js/password.js"></script>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <div class="menu">
+        <div class="head">
+            <div class="item"><a asp-controller="Home" asp-action="Index">Мониторинг</a></div>
+            @if (User.IsInRole("admin"))
+            {
+                <div class="item"><a asp-controller="User" asp-action="AddNewUser">Настройки</a></div>
+            }
+            @if (User.IsInRole("admin") || User.IsInRole("Shop manager"))
+            {
+                <div class="item"><a asp-controller="EventsTypes" asp-action="AddEventType">Типы</a></div>
+            }
+            @if (User.Identity.IsAuthenticated)
+            {
+                @*<div class="item"><a asp-controller="News" asp-action="AddNews">News</a></div>*@
+                <div class="item"><a asp-controller="Account" asp-action="Logout">Выход</a></div>
+            }
+            else
+            {
+                <div class="item"><a asp-controller="Account" asp-action="Login">Авторизация</a></div>
+            }
+            <div class="item" id="role">
+                @if (User.IsInRole("admin"))
+                {
+                    <div>
+                        Админ
+                    </div>
+
+                }
+                else if (User.IsInRole("foreman"))
+                {
+                    <div>
+                        Мастер
+                    </div>
+                }
+                else if (User.IsInRole("Shop manager"))
+                {
+                    <div>
+                        Начальник цеха
+                    </div>
+                }
+                else
+                {
+                    <div>
+                        Гость
+                    </div>
+                }
+            </div>
+        </div>
+</div>
+        @RenderBody()
+</body>
+</html>
